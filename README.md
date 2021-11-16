@@ -14,4 +14,6 @@ recharts has limited syncing abilities: https://recharts.org/en-US/examples/Sync
 function, only brush (1d drag). a limited fix may be to limit domain changes only by doing the brush action on the histogram, while the corners are 
 essentially non-interactive.
 
+another possible way to do zoom (for a single plot) would be to use the onMouseDown attribute on the actual plot to set the appropriate useState hooks
+(left-right, up-down), have it referenceArea with the mentioned hooks, and zoom in (make axis dimension states that is set with zoom) onMouseUp.
 
