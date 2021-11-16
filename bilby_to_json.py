@@ -3,7 +3,7 @@ Collection of functions required to transform a bilby.core.Result object into a 
 Refer to bilby docs to setup bilby: https://lscsoft.docs.ligo.org/bilby/index.html
 """
 
-import sample_bilby
+from sample import sample_bilby
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter
